@@ -29,5 +29,7 @@ namespace MIS4200_Team11.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MIS4200_Team11.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
