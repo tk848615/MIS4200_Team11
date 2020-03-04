@@ -20,6 +20,7 @@ namespace MIS4200_Team11.Controllers
         public ActionResult Index()
         {
             return View(db.UserDetails.ToList());
+
         }
 
         // GET: UserDetails/Details/5
@@ -57,8 +58,15 @@ namespace MIS4200_Team11.Controllers
                 Guid.TryParse(User.Identity.GetUserId(), out memberId);
                 userDetails.ID = memberId;
                 db.UserDetails.Add(userDetails);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                try
+                {
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                catch (Exception)
+                {
+                    return View("DuplicateUser");
+                }
             }
 
             return View(userDetails);

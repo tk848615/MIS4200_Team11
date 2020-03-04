@@ -27,8 +27,9 @@ namespace MIS4200_Team11.Models
         public string Office { get; set; }
         [Display(Name = "Current position")]
         public string Position { get; set; }
+       
         [Display(Name = "Hire Date")]
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date)]
         public DateTime hireDate { get; set; }
         public string photo { get; set; }
 
