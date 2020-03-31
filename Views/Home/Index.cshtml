@@ -1,35 +1,137 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-<br/>
-<br />
-<div class="jumbotron">
-    <h1>Team 11</h1>
-    <p class="lead">This is the homepage for Team 11's Centric application.</p>
-    
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Centric</h2>
-        <p>
-            
-        </p>
-        <p><a class="btn btn-default" href="https://centricconsulting.com/">Centric Website &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2></h2>
-        <p></p>
-        <p><a class="btn btn-default" href="">Button &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2></h2>
-        <p></p>
-        <p><a class="btn btn-default" href="">Button &raquo;</a></p>
-    </div>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         body {
-            background-color: #EEE2DC;
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
         }
     </style>
-</div>
+
+</head>
+
+<body>
+    <!--Centric-->
+    <div id="Centric" class="container-fluid bg-1 text-center">
+        <h3 class="margin"></h3>
+        <img src=https://sourcemedia.brightspotcdn.com/39/54/66705f954a6684d73b24c0baa6ff/centric-logo-color.png style="display:inline" alt="centric" width="719" height="100">
+        <h3></h3>
+    </div>
+
+    <!--Core Values-->
+    <div id="CoreValues" class="container-fluid bg-2 text-center">
+        <h3 class="margin">Core Values</h3>
+        <p>
+            Centric Consulting believes success comes from doing good work and creating value for those around us.
+            Our core purpose is to create unmatched experiences for clients and employees. An experience like no other is less about the event itself and more about the positive feeling you get from it.   
+        </p>
+        <p>We deliver that unmatched feeling by: Always being willing to help. Not only do we do what it takes to help our colleagues and clients, but we are always on the lookout for ways to make a positive impact. Treating clients like friends – because that’s what you become. Our clients are treated with the same adoration and respect we give our friends, which often leads to deeper and more positive relationships. Doing what it takes – together. Your success is our success so we work hard to ensure you have what you need, and work to figure it out together. Putting you first. We strive to put others before ourselves in an authentic way without any expectation of a payoff.</p>
+        <a href="https://centricconsulting.com/" class="btn btn-default btn-lg">Centric Wesbite</a>
+    </div>
+
+    <!--Users Details-->
+    <div id="Users" class="container-fluid bg-3 text-center">
+        <h3 class="margin">Searching Users</h3>
+        <p>
+            We want to be able to give centric the ability to search users.
+        </p>
+        <a href="" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search Users
+        </a>
+    </div>
+
+    <!--Contact-->
+    <div id="Contact" class="container-fluid bg-2 text-center">
+        <h3 class="margin">Our Team</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Andrew Dymarkowski</p>
+                <p>Email: ad694414@ohio.edu</p>
+                <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Conor Faut</p>
+                <p>Email: cf085115@ohio.edu</p>
+                <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Kenneth Lavan</p>
+                <p>Email: kl980715@ohio.edu</p>
+                <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-sm-4">
+                <p>Rick Thiebout</p>
+                <p>Email: rt334015@ohio.edu</p>
+                <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-4">
+                <p>Tim Kieltyka</p>
+                <p>Email: tk848615@ohio.edu</p>
+                <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <p>Website created by Team 11</p>
+    </footer>
+
+</body>
+</html>
