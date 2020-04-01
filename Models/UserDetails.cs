@@ -33,7 +33,18 @@ namespace MIS4200_Team11.Models
         public DateTime hireDate { get; set; }
         public string photo { get; set; }
 
-       // public ICollection<A> User { get; set; }
+
+        public string employeeName
+        {
+            get
+            {
+                return lastName + ", " + firstName;
+            }
+
+        }
+
+
+        public ICollection<Recognition> Recognition { get; set; }
 
     }
 }
